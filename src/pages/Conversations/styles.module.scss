@@ -1,0 +1,9 @@
+.chatContainer {
+  height: calc(100vh - 70px);
+  position: "relative";
+
+  .logoutButton {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+}
