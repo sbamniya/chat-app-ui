@@ -6,7 +6,6 @@ export interface Conversation {
   messages: Message[];
   startedBy: string;
   createdAt: string;
-  receivers?: string[];
   participantIds: string[];
 }
 
@@ -37,7 +36,6 @@ const CONVERSATION_QUERY = gql`
       }
       startedBy
       createdAt
-      receivers
       participantIds
     }
   }
@@ -58,7 +56,6 @@ const CREATE_CONVERSATION_MUTATION = gql`
       id
       startedBy
       createdAt
-      receivers
     }
   }
 `;
